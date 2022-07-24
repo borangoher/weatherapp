@@ -13,7 +13,7 @@ const presVal = document.getElementById("pres");
 
 const createURL = function (inputElem, key) {
     const query = inputElem.value;
-    const URL = "http://api.openweathermap.org/data/2.5/weather?q=" + query + "&APPID=" + key;
+    const URL = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&APPID=" + key;
     return URL;
 }
 
