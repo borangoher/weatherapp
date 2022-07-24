@@ -37,8 +37,8 @@ const displayData = async function (weatherJSON) {
     tempApp.textContent = "Apparent Temperature: " + toCelcStr(weatherObject.main.feels_like) + "°C";
     tempMax.textContent = "Maximum Temperature: " + toCelcStr(weatherObject.main.temp_max) + "°C";
     tempMin.textContent = "Minimum Temperature: " + toCelcStr(weatherObject.main.temp_min) + "°C";
-    humVal.textContent = "Humidity: " + toCelcStr(weatherObject.main.humidity) + "%";
-    presVal.textContent = "Pressure: " + toCelcStr(weatherObject.main.pressure) + "mb";
+    humVal.textContent = "Humidity: " + weatherObject.main.humidity.toFixed(2) + "%";
+    presVal.textContent = "Pressure: " + weatherObject.main.pressure.toFixed(2) + "mb";
 }
 
 formElem.addEventListener("submit", function (event) {event.preventDefault(); displayData(fetchData(createURL(searchBar, APIKey)));});
