@@ -18,7 +18,12 @@
     <script src="./script.js" defer></script>
     <style>
       body {
-        background: url("./image/henry-co--qGKIX1Vxtk-unsplash.jpg") center / cover no-repeat;
+        background: url("./image/henry-co--qGKIX1Vxtk-unsplash.jpg") no-repeat
+          center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
       }
       h4 {
         text-shadow: 0 0 0.5px white;
@@ -49,9 +54,16 @@
           />
         </form>
       </div>
-      <div class="col-sm-4" style="display: flex; justify-content: flex-end; align-items: center;">
+      <div
+        class="col-sm-4"
+        style="display: flex; justify-content: flex-end; align-items: center"
+      >
         <a href="https://github.com/borangoher" class="m-2">
-            <img src="./image/GitHub-Mark-Light-64px.png" class="img-fluid" alt="Github link" />
+          <img
+            src="./image/GitHub-Mark-Light-64px.png"
+            class="img-fluid"
+            alt="Github link"
+          />
         </a>
       </div>
     </div>
